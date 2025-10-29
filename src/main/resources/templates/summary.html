@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CPAC Assessment Summary</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>CPAC Assessment Summary</h2>
+    <label for="studentSelect">Select student:</label>
+    <select id="studentSelect"></select>
+    <div id="summaryGrid"></div>
+    <button onclick="window.print()">Print</button>
+    <button onclick="exportPDF()">Export to PDF</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
