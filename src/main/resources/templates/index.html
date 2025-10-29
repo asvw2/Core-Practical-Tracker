@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CPAC Summary Uploader</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Upload CPAC Assessment Excel File</h2>
+    <form enctype="multipart/form-data" method="post" action="/upload">
+        <input type="file" name="file" accept=".xlsx,.xls" required />
+        <button type="submit">Upload</button>
+    </form>
+    <div th:if="${error}" style="color:red;" th:text="${error}"></div>
+</body>
+</html>
