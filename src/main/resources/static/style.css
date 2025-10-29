@@ -1,0 +1,23 @@
+.token {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 2px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+}
+.token.y { background: #4CAF50; }      /* Green */
+.token.wt { background: #FFA500; }    /* Orange */
+.token.n { background: #F44336; }     /* Red */
+.token.zero { background: #fff; color: #333; border: 1px solid #ccc; }
+#summaryGrid {
+    margin-top: 24px;
+    font-family: monospace;
+}
+.cpac-row {
+    margin-bottom: 12px;
+}
